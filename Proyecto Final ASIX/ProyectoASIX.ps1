@@ -32,12 +32,18 @@ Clear-Host
 Write-Host "1: Crear usuario"
 Write-Host "2: Eliminar usuario"
 Write-Host "3: Ver usuarios existentes"
-Write-Host "4: Salir"
+Write-Host "4: Ver la configuración de la red"
+Write-Host "5: Salir"
 
-<# Cmdlet Read-Host muestra por pantalla un texto y el usuario tiene que
-escribir #>
+<# Cmdlet Read-Host muestra por pantalla un texto y el usuario tiene que responder con otro texto,
+en este caso tendrá que escribir "si o no", la respuesta del usuario la guardaremos en una variable
+llamada "$opcion" usando el cmdlet "Read-Host", y dependiendo de la respuesta que se ha guardado en
+la varieble proporcionada por el usuario, el script seguirá adelante o se cerrará.#>
 $opcion = read-Host "Desea continuar? si/no"
 
+<# Lo primero que he hecho es crear un bucle "While", para que una vez seleccionada una opción por
+el usuario y realizados los cambios que se tienen que realizar, el código nos devoloverá al
+principio del programa dándonos la posibilidad de volver a elegir otra opción del menú.#>
 while ($opcion -eq "si")
 {
 
@@ -56,7 +62,7 @@ while ($opcion -eq "si")
             Write-Host "-----------------------------------------------------------------------"}
         
             2{Write-Host ""
-            $nombre = read-host "Nombre de usuario a borrar"
+            $nombre = read-host "Nombre de usuario a borrar'"
             Write-Host "Se ha eliminado el usuario $nombre"
             Remove-LocalUser -Name $nombre
             Write-Host "-----------------------------------------------------------------------"}
@@ -65,9 +71,15 @@ while ($opcion -eq "si")
             Write-Host "Ha seleccionado la opción 3 'Ver usuarios existentes'"
             net user
             Write-Host "-----------------------------------------------------------------------"}
-        
+
             4{Write-Host ""
-            Write-Host "Ha seleccionado la opción 'Salir'"
+            Write-Host "Ha seleccionado la opción 4 'Ver la configuración de la red'"
+            Get-NetIPConfiguration
+            ipconfig
+            Write-Host "-----------------------------------------------------------------------"}
+        
+            5{Write-Host ""
+            Write-Host "Ha seleccionado la opción 5 'Salir'"
             Write-Host "-----------------------------------------------------------------------"
             break}
          
