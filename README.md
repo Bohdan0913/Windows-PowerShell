@@ -1,8 +1,8 @@
 # Proyecto Fin de Curso ASIX | Bohdan Kyfchuk
 
-- Scripts de Windows en PowerShell
+Scripts de Windows en PowerShell
 
-# hola
+# Para poder ejecutar el script 
 
 ## hola
 
