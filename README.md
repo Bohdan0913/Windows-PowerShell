@@ -2,7 +2,7 @@
 
 Scripts de Windows en PowerShell
 
-# Para poder ejecutar el script 
+#### Para poder ejecutar el script debemos abrir la carpeta "Proyecto Final ASIX"
 
 ## hola
 
