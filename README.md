@@ -32,8 +32,6 @@ Scripts de Windows en PowerShell
 
 ## Tecnologías implicadas:
 
-- Para poder realizar este proyecto se han utilizado las siguientes herramientas:
-
 - Windows PowerShell
 
 - Windows PowerShell ISE
