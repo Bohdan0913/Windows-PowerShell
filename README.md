@@ -12,15 +12,15 @@
 
 Por defecto las políticas de seguridad de Windows para poder ejecutar cualquier script están en modo "Restricted" por lo cual no podremos ejecutar el script sin cambiar dicha política pero en vez de cambiarla de forma permanente usaremos la opción "Bypass" está diseñada para ser utilizada cuando está cambiando temporalmente la política de ejecución durante una ejecución única Powershell.exe para permitir la ejecución de un único script una vez, sin alterar la configuración actual y alterar la seguridad del sistema. 
 
-## En qué consiste el proyecto:
+### En qué consiste el proyecto:
 
 El proyecto consiste en crear un script que al ejecutarse muestra un menú con diferentes opciones, cada opción permite al usuario configurar un aspecto del sistema como por ejemplo crear usuarios, modificar las configuraciones de la red, visualizar el estado actual de la red, etc.
 
-## Instrucciones:
+### Instrucciones:
 
 El programa se comporta de la siguiente manera: al ejecutar el script se abrirá un menú con opciones y aparece una pregunta: "Continuar?" que el usuario tiene que contestar con un "si" o "no" dependiendo si quiere continuar con la ejecución del script o salir, al responder "si" el scipr sigue ejecutándose y le hace otra pregunta al usuario: "Elige un número", el usuario tendrá que introducir uno de los números que aparecen en el menú dependiendo de qué aspecto del sistema desea configurar, una vez el usuario introduce un número aparecerán unas instrucciones que se deben seguir para realizar dicha configuración, al finalizar la configuración el programa volverá a mostrar el menú al usuario volviendo a preguntándole si desea continuar con el script o salir.
 
-## Cómo funciona el código:
+### Cómo funciona el código:
 
 Para crear el menú he utilizado un bucle **"WHILE"** y los condicionales **"IF"** y **"SWITCH"**. El bucle "While" funciona de tal forma que cuando el usuario elige una opción, al finalizarla se vuelve a mostrar el menú con todas las opciones dándole al usuario la posibilidad de seguir administrando eligiendo otra opción del menú (o la misma) sin la necesidad de volver a ejecutar el script de nuevo.
 
@@ -30,7 +30,7 @@ La condicional **"IF"** se ha usado para que dependiendo de las respuestas del u
 
 Y por último la condicional **"SWITCH"**, se ha usado esta condicional para crear las opciones del menú, cada opción forma parte del **"Switch"** de tal forma que no se necesita crear las condicionales **"if"** para que el script ejecute una opción u otra dependiendo de la respuesta del usuario sino que todas las opciones del menú forman parte del switch y se ejecutan dependiendo de la respuesta del usuario.
 
-## Tecnologías implicadas:
+### Tecnologías implicadas:
 
 - Windows PowerShell
 
