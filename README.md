@@ -18,14 +18,32 @@ Scripts de Windows en PowerShell
 
 ## Instrucciones:
 
-El programa se comporta de la siguiente manera: al ejecutar el script se abrirá un menú con opciones y aparece una pregunta: "Continuar?" que el usuario tiene que contestar con un "si" o "no" dependiendo si quiere continuar con la ejecución del script o salir, al responder "si" el scipr sigue ejecutándose y le hace otra pregunta al usuario: "Elige un número", el usuario tendrá que introducir uno de los números que aparecen en el menú dependiendo de qué aspecto del sistema desea configurar, una vez el usuario introduce un número aparecerán unas instrucciones que se deben seguir para realizar dicha configuración, al finalizar la configuración el programa volverá a mostrar el menú al usuario volviendo a preguntándole si desea continuar con el script o salir.
+##### El programa se comporta de la siguiente manera: al ejecutar el script se abrirá un menú con opciones y aparece una pregunta: "Continuar?" que el usuario tiene que contestar con un "si" o "no" dependiendo si quiere continuar con la ejecución del script o salir, al responder "si" el scipr sigue ejecutándose y le hace otra pregunta al usuario: "Elige un número", el usuario tendrá que introducir uno de los números que aparecen en el menú dependiendo de qué aspecto del sistema desea configurar, una vez el usuario introduce un número aparecerán unas instrucciones que se deben seguir para realizar dicha configuración, al finalizar la configuración el programa volverá a mostrar el menú al usuario volviendo a preguntándole si desea continuar con el script o salir.
 
 ## Cómo funciona el código:
 
-Para crear el menú he utilizado un bucle "WHILE" y los condicionales "IF" y "SWITCH". El bucle "While" funciona de tal forma que cuando el usuario elige una opción, al finalizarla se vuelve a mostrar el menú con todas las opciones dándole al usuario la posibilidad de seguir administrando eligiendo otra opción del menú (o la misma) sin la necesidad de volver a ejecutar el script de nuevo.
+##### Para crear el menú he utilizado un bucle "WHILE" y los condicionales "IF" y "SWITCH". El bucle "While" funciona de tal forma que cuando el usuario elige una opción, al finalizarla se vuelve a mostrar el menú con todas las opciones dándole al usuario la posibilidad de seguir administrando eligiendo otra opción del menú (o la misma) sin la necesidad de volver a ejecutar el script de nuevo.
 
-Para que el script pueda ejecutar el código que el usuario le dice he usado el cmdlet Read-Host que ofrece Windows PowerShell que permite al usuario interactuar con el script dándole la posibilidad de escribir texto por pantalla, dicho texto se guarda en una variable que posteriormente usaremos en los condicionales "IF" y "Switch" para ejecutar las líneas de código que deseamos, dependiendo de la respuesta que ha proporcionado el usuario se ejecutarán diferentes líneas de código, por ejemplo en la condicional "Switch" si el usuario posteriormente escribió el número 1, se ejecutará la línea de código del switch que tiene puesto el número 1 (crear usuario).
+##### Para que el script pueda ejecutar el código que el usuario le dice he usado el cmdlet Read-Host que ofrece Windows PowerShell que permite al usuario interactuar con el script dándole la posibilidad de escribir texto por pantalla, dicho texto se guarda en una variable que posteriormente usaremos en los condicionales "IF" y "Switch" para ejecutar las líneas de código que deseamos, dependiendo de la respuesta que ha proporcionado el usuario se ejecutarán diferentes líneas de código, por ejemplo en la condicional "Switch" si el usuario posteriormente escribió el número 1, se ejecutará la línea de código del switch que tiene puesto el número 1 (crear usuario).
 
-La condicional "IF" se ha usado para que dependiendo de las respuestas del usuario el programa ejecute una opción u otra, por ejemplo al ejecutar el script aparece una pregunta de si el usuario desea continuar con el script o salir, esta opción se ha creado usando la condicional IF ya que dependiendo de la respuesta del usuario el script sigue ejecutándose o se cierra, también se ha usado esta condicional para confirmar la respuesta del usuario, por ejemplo cuando elegimos una opción y modificamos alguna configuración del sistema antes de realizarse dicha modificación aparecerá una pregunta de confirmación que el usuario debe contestar con un "si" o "no" dependiendo si desea confirmar que se realice la configuración o no.
+##### La condicional "IF" se ha usado para que dependiendo de las respuestas del usuario el programa ejecute una opción u otra, por ejemplo al ejecutar el script aparece una pregunta de si el usuario desea continuar con el script o salir, esta opción se ha creado usando la condicional IF ya que dependiendo de la respuesta del usuario el script sigue ejecutándose o se cierra, también se ha usado esta condicional para confirmar la respuesta del usuario, por ejemplo cuando elegimos una opción y modificamos alguna configuración del sistema antes de realizarse dicha modificación aparecerá una pregunta de confirmación que el usuario debe contestar con un "si" o "no" dependiendo si desea confirmar que se realice la configuración o no.
 
-Y por último la condicional "SWITCH", se ha usado esta condicional para crear las opciones del menú, cada opción forma parte del "Switch" de tal forma que no se necesita crear las condicionales "if" para que el script ejecute una opción u otra dependiendo de la respuesta del usuario sino que todas las opciones del menú forman parte del switch y se ejecutan dependiendo de la respuesta del usuario.
+##### Y por último la condicional "SWITCH", se ha usado esta condicional para crear las opciones del menú, cada opción forma parte del "Switch" de tal forma que no se necesita crear las condicionales "if" para que el script ejecute una opción u otra dependiendo de la respuesta del usuario sino que todas las opciones del menú forman parte del switch y se ejecutan dependiendo de la respuesta del usuario.
+
+## Tecnologías implicadas:
+
+- Para poder realizar este proyecto se han utilizado las siguientes herramientas:
+
+- Windows PowerShell
+
+- Windows PowerShell ISE
+
+- Símbolo del sistema
+
+- Navegador web
+
+- Tres Máquinas Virtuales Windows 10, Windows 10 y Windows 7
+
+- Archivos de texto sin formato con la extensión .bat y .ps1
+
+- Aplicaciones del sistema
