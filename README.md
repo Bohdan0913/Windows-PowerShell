@@ -18,7 +18,7 @@ Scripts de Windows en PowerShell
 
 ## Instrucciones:
 
-##### El programa se comporta de la siguiente manera: al ejecutar el script se abrirá un menú con opciones y aparece una pregunta: **"Continuar?"** que el usuario tiene que contestar con un **"si"** o **"no"** dependiendo si quiere continuar con la ejecución del script o salir, al responder **"si"** el scipr sigue ejecutándose y le hace otra pregunta al usuario: **"Elige un número"**, el usuario tendrá que introducir uno de los números que aparecen en el menú dependiendo de qué aspecto del sistema desea configurar, una vez el usuario introduce un número aparecerán unas instrucciones que se deben seguir para realizar dicha configuración, al finalizar la configuración el programa volverá a mostrar el menú al usuario volviendo a preguntándole si desea continuar con el script o salir.
+El programa se comporta de la siguiente manera: al ejecutar el script se abrirá un menú con opciones y aparece una pregunta: **"Continuar?"** que el usuario tiene que contestar con un **"si"** o **"no"** dependiendo si quiere continuar con la ejecución del script o salir, al responder **"si"** el scipr sigue ejecutándose y le hace otra pregunta al usuario: **"Elige un número"**, el usuario tendrá que introducir uno de los números que aparecen en el menú dependiendo de qué aspecto del sistema desea configurar, una vez el usuario introduce un número aparecerán unas instrucciones que se deben seguir para realizar dicha configuración, al finalizar la configuración el programa volverá a mostrar el menú al usuario volviendo a preguntándole si desea continuar con el script o salir.
 
 ## Cómo funciona el código:
 
