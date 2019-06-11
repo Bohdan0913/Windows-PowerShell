@@ -12,9 +12,9 @@ Scripts de Windows en PowerShell
 
 ##### Por defecto las políticas de seguridad de Windows para poder ejecutar cualquier script están en modo "Restricted" por lo cual no podremos ejecutar el script sin cambiar dicha política pero en vez de cambiarla de forma permanente usaremos la opción "Bypass" está diseñada para ser utilizada cuando está cambiando temporalmente la política de ejecución durante una ejecución única Powershell.exe para permitir la ejecución de un único script una vez, sin alterar la configuración actual y alterar la seguridad del sistema. 
 
-## hola
+## En qué consiste el proyecto:
 
-### hola
+##### El proyecto consiste en crear un script que al ejecutarse muestra un menú con diferentes opciones, cada opción permite al usuario configurar un aspecto del sistema como por ejemplo crear usuarios, modificar las configuraciones de la red, visualizar el estado actual de la red, etc.
 
 #### hola
 
