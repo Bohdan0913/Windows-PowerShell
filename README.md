@@ -1,5 +1,4 @@
-# Proyecto Fin de Curso ASIX | Bohdan Kyfchuk
-### IES FRANCESC DE BORJA MOLL
+# Proyecto Fin de Curso ASIX  | IES FRANCESC DE BORJA MOLL | Bohdan Kyfchuk
 
 ## Scripts de Windows en PowerShell
 
